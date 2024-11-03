@@ -1,5 +1,6 @@
 * {
     font-family: Verdana;
+    margin: 0;
 }
 
 body {
@@ -12,18 +13,21 @@ body {
     margin: 0 auto;
 }
 
-.flex-container {
+.flex-cotainer {
     display: flex;
-    background: #fff;
-    flex-wrap: wrap;
-    /* flex-wrap: nowrap; */
-    /* flex-wrap: wrap-reverse; */
+    background-color: white;
+}
+
+.flex-cotainer::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .box {
     height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
+    min-width: 100px;
+    float: left;
 }
 
 .one {
